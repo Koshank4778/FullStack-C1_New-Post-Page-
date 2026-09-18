@@ -1,0 +1,288 @@
+/* General Page */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+/* Header */
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 70px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dddddd;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ef4b3a;
+}
+
+.logo span {
+  color: #333333;
+}
+
+.site-header nav {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.site-header nav a {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.site-header nav a:hover {
+  color: #ef4b3a;
+}
+
+
+/* Main */
+
+main {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+
+
+/* Featured Sections */
+
+.featured-articles,
+.featured-tutorials {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.featured-articles h2,
+.featured-tutorials h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+
+/* Article Cards */
+
+.article-container,
+.tutorial-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.article-card,
+.tutorial-card {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.article-card img,
+.tutorial-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.article-card h3,
+.tutorial-card h3 {
+  font-size: 20px;
+  margin: 18px 18px 10px;
+}
+
+.article-card p,
+.tutorial-card p {
+  margin: 0 18px 18px;
+  line-height: 1.5;
+  color: #666666;
+}
+
+.article-info,
+.tutorial-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 18px 20px;
+  font-size: 14px;
+}
+
+
+/* Buttons */
+
+.featured-articles button,
+.featured-tutorials button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e94b35;
+  color: white;
+  font-size: 15px;
+}
+
+.featured-articles button:hover,
+.featured-tutorials button:hover {
+  background-color: #c93622;
+}
+
+
+/* Footer */
+
+.footer {
+  background-color: #222222;
+  color: white;
+  margin-top: 80px;
+}
+
+
+/* Newsletter */
+
+.newsletter {
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom: 1px solid #444444;
+}
+
+.newsletter h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.subscribe {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.subscribe input {
+  width: 300px;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+}
+
+.subscribe button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 4px;
+  background-color: #e94b35;
+  color: white;
+}
+
+
+/* Footer Links */
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-links h3 {
+  margin-bottom: 15px;
+}
+
+.footer-links a {
+  display: block;
+  margin: 8px 0;
+  color: #cccccc;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+
+/* Footer Bottom */
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  border-top: 1px solid #444444;
+  color: #cccccc;
+}
+
+.footer-bottom div {
+  display: flex;
+  gap: 20px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  header nav {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .article-container,
+  .tutorial-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .subscribe {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe input {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .footer-bottom div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
