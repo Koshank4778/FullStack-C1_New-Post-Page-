@@ -42,7 +42,7 @@ function Footer() {
             </div>
 
             <div className="footer-bottom">
-                <p>DEV@Deakin 2022</p>
+                <p>DEV@Deakin 2026</p>
 
                 <div>
                     <a href="#">Privacy Policy</a>

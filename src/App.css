@@ -286,3 +286,7 @@ main {
     justify-content: center;
   }
 }
+
+.site-header .logo {
+  text-decoration: none;
+}

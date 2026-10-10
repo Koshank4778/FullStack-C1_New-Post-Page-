@@ -2,6 +2,8 @@ import TutorialCard from "./TutorialCard";
 
 function FeaturedTutorials() {
     const tutorials = [
+
+        
         {
             id: 1,
             title: "React Fundamentals",
@@ -16,7 +18,7 @@ function FeaturedTutorials() {
             description: "Understand the core concepts of modern JavaScript.",
             image: "https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg",
             rating: 4,
-            author: "Alex"
+            author: "Tushar"
         },
         {
             id: 3,
@@ -24,7 +26,7 @@ function FeaturedTutorials() {
             description: "Build a strong foundation in modern web development.",
             image: "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg",
             rating: 5,
-            author: "Sarah"
+            author: "Suhani"
         }
     ];
 

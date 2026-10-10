@@ -1,18 +1,23 @@
 import "./App.css";
-import Header from "./components/Header";
-import FeaturedArticles from "./components/FeaturedArticles";
-import FeaturedTutorials from "./components/FeaturedTutorials";
+import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
+import About from "./pages/About";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <Header />
+      <NavBar />
 
-      <main>
-        <FeaturedArticles />
-        <FeaturedTutorials />
-      </main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
+      </Routes>
 
       <Footer />
     </div>
