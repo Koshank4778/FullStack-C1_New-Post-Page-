@@ -514,3 +514,126 @@ main {
     font-size: 30px;
   }
 }
+
+
+/* ===== C1 New Post Page ===== */
+
+.post-page {
+  width: 100%;
+  max-width: 850px;
+  margin: 35px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.post-form {
+  width: 100%;
+}
+
+.post-heading {
+  background: #e5e5e5;
+  padding: 10px 12px;
+  margin: 0 0 18px;
+  font-size: 20px;
+}
+
+.post-type {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.post-type label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.post-section h3 {
+  background: #e5e5e5;
+  padding: 9px 12px;
+  margin: 0 0 12px;
+  font-size: 16px;
+}
+
+.post-instruction {
+  text-align: center;
+  color: #555;
+  font-size: 13px;
+  margin-bottom: 22px;
+}
+
+.post-section>label {
+  display: block;
+  font-size: 14px;
+  margin: 15px 0 6px;
+}
+
+.post-section input[type="text"],
+.post-section textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 2px;
+  font: inherit;
+}
+
+.post-section input[type="text"] {
+  min-height: 40px;
+}
+
+.post-section textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.post-section .large-textarea {
+  min-height: 220px;
+}
+
+.post-section .small-textarea {
+  min-height: 85px;
+}
+
+.tag-help {
+  font-size: 12px;
+  color: #666;
+  margin-top: 6px;
+}
+
+.post-button {
+  display: block;
+  min-width: 120px;
+  margin: 25px 0 0 auto;
+  padding: 10px 25px;
+  border: none;
+  background: #b5b5b5;
+  color: #111;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.post-button:hover {
+  background: #999;
+}
+
+@media (max-width: 600px) {
+  .post-page {
+    margin: 20px auto;
+    padding: 0 14px;
+  }
+
+  .post-type {
+    gap: 15px;
+  }
+
+  .post-section .large-textarea {
+    min-height: 180px;
+  }
+}
